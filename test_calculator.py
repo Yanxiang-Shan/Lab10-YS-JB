@@ -22,16 +22,16 @@ class TestCalculator(unittest.TestCase):
             div(0, 5)
 
     def test_logarithm(self):
-        self.assertAlmostEqual(log(10, 100), 2.0)
-        self.assertAlmostEqual(log(2, 8), 3.0)
+        self.assertAlmostEqual(logarithm(10, 100), 2.0)
+        self.assertAlmostEqual(logarithm(2, 8), 3.0)
 
     def test_log_invalid_base(self): # 1 assertion
         with self.assertRaises(ValueError):
-            log(1, 10)
+            logarithm(1, 10)
         with self.assertRaises(ValueError):
-            log(-2, 10)
+            logarithm(-2, 10)
         with self.assertRaises(ValueError):
-            log(2, -10)
+            logarithm(2, -10)
 
     def test_multiply(self):  # 3 assertions
         self.assertEqual(mul(3, 2), 6)
@@ -46,11 +46,11 @@ class TestCalculator(unittest.TestCase):
     def test_log_invalid_argument(self):
         #"Invalid input for logarithm. Base must be >0 and ≠ 1, and argument must be > 0.")
         with self.assertRaises(ValueError):
-            log(-5, 2)
+            logarithm(-5, 2)
         with self.assertRaises(ValueError):
-            log(5, -2)
+            logarithm(5, -2)
         with self.assertRaises(ValueError):
-            log(5, 1)
+            logarithm(5, 1)
 
     def test_hypotenuse(self):
         self.assertEqual(hypotenuse(3,4), 5)
