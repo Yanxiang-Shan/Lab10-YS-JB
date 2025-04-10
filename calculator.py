@@ -4,6 +4,9 @@ calculator.py
 
 One function per operation, in order.
 """
+#https://github.com/Yanxiang-Shan/Lab10-YS-JB.git
+#Partner 1: Yanxiang Shan
+#Partner 2: Jiya Bhatt
 
 import math
 
