@@ -19,19 +19,19 @@ class TestCalculator(unittest.TestCase):
 
     def test_divide_by_zero(self):
         with self.assertRaises(ZeroDivisionError):
-            div(0, 5)
+            div(5, 0)
 
     def test_logarithm(self):
         self.assertAlmostEqual(logarithm(10, 100), 2.0)
         self.assertAlmostEqual(logarithm(2, 8), 3.0)
 
-    def test_log_invalid_base(self): # 1 assertion
-        with self.assertRaises(ValueError):
-            logarithm(1, 10)
+    def test_log_invalid_base(self):
         with self.assertRaises(ValueError):
             logarithm(-2, 10)
         with self.assertRaises(ValueError):
             logarithm(2, -10)
+        with self.assertRaises(ValueError):
+            logarithm(2, 1)
 
     def test_multiply(self):  # 3 assertions
         self.assertEqual(mul(3, 2), 6)
@@ -44,7 +44,6 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(div(6, 3), 2)
 
     def test_log_invalid_argument(self):
-        #"Invalid input for logarithm. Base must be >0 and ≠ 1, and argument must be > 0.")
         with self.assertRaises(ValueError):
             logarithm(-5, 2)
         with self.assertRaises(ValueError):
