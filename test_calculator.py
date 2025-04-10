@@ -29,6 +29,34 @@ class TestCalculator(unittest.TestCase):
         with self.assertRaises(ValueError):
             log(2, -10)
 
+    def test_multiply(self):  # 3 assertions
+        self.assertEqual(mul(3, 2), 6)
+        self.assertEqual(mul(3, 4), 12)
+        self.assertEqual(mul(3, 3), 9)
+
+    def test_divide(self):  # 3 assertions
+        self.assertEqual(div(6, 2), 3)
+        self.assertEqual(div(6, 4), 1.5)
+        self.assertEqual(div(6, 3), 2)
+
+    def test_log_invalid_argument(self):
+        #"Invalid input for logarithm. Base must be >0 and ≠ 1, and argument must be > 0.")
+        with self.assertRaises(ValueError):
+            log(-5, 2)
+        with self.assertRaises(ValueError):
+            log(5, -2)
+        with self.assertRaises(ValueError):
+            log(5, 1)
+
+    def test_hypotenuse(self):
+        self.assertEqual(hypotenuse(3,4), 5)
+        self.assertEqual(hypotenuse(6,8),10)
+        self.assertEqual(hypotenuse(12,16),20)
+
+    def test_sqrt(self):
+        self.assertEqual(square_root(9), 3)
+        self.assertEqual(square_root(4), 2)
+        self.assertEqual(square_root(16),4)
 # Do not touch this
 if __name__ == "__main__":
     unittest.main()
