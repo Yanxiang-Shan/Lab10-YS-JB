@@ -1,3 +1,7 @@
+#https://github.com/Yanxiang-Shan/Lab10-YS-JB.git
+#Partner 1: Yanxiang Shan
+#Partner 2: Jiya Bhatt
+
 import unittest
 from calculator import *
 
