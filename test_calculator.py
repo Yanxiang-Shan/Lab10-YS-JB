@@ -13,9 +13,9 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(add(0, 0), 0)
 
     def test_subtract(self):
-        self.assertEqual(sub(10 ,4), 7)
-        self.assertEqual(sub(0, 5), -5)
-        self.assertEqual(sub(-3, -3), 0)
+        self.assertEqual(subtract(10 ,4), 7)
+        self.assertEqual(subtract(0, 5), -5)
+        self.assertEqual(subtract(-3, -3), 0)
 
     def test_divide_by_zero(self):
         with self.assertRaises(ZeroDivisionError):
