@@ -26,7 +26,7 @@ def logarithm(a, b):
         raise ValueError("Invalid input: a must be > 0, b must be > 0 and != 1")
     return math.log(a, b)
 
-def expo(a,b):
+def exp(a,b):
     return a**b
 
 def square_root(a):
