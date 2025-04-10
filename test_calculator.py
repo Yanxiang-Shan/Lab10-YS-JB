@@ -40,6 +40,7 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(div(6, 3), 2)
 
     def test_log_invalid_argument(self):
+        #"Invalid input for logarithm. Base must be >0 and ≠ 1, and argument must be > 0.")
         with self.assertRaises(ValueError):
             log(-5, 2)
         with self.assertRaises(ValueError):
