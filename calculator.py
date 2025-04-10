@@ -1,9 +1,3 @@
-"""
-calculator.py
-- Defines functions used to create a simple calculator
-
-One function per operation, in order.
-"""
 #https://github.com/Yanxiang-Shan/Lab10-YS-JB.git
 #Partner 1: Yanxiang Shan
 #Partner 2: Jiya Bhatt
