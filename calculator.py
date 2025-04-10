@@ -23,7 +23,7 @@ def logarithm(a,b):
         raise ValueError
     return math.log(b,2)
 
-def expo(a,b):
+def exp(a,b):
     return a**b
 
 def square_root(a):
